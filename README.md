@@ -40,7 +40,7 @@ c++ compiler; compilation was tested with g++ version 5.3 (Linux) and clang vers
 
 ## Test Fast-SG (small test)
 	make test
-## 	
+	
 ## Libraries used
 Currently Fast-SG use the following C++ opensource libraries:
  
@@ -81,10 +81,11 @@ FAST-SG requires 4 mandatory arguments
 
 Example of a read configuration file can be foud in examples/ecoli-reads.txt
 
-## Running Fast-SG:
+## Running Fast-SG (example):
 
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 	
-	To obtain help and advanced options execute:
+	To obtain help and advanced options details execute:
 
 	./FAST-SG.pl  --help
+	
