@@ -54,6 +54,7 @@ Currently Fast-SG use the following C++ opensource libraries:
 
 # Usage instructions
 FAST-SG.pl is the wrapper script used to run FastSG++.
+## Mandatory options
 FAST-SG requires 4 mandatory arguments
 
 1.- The k-mer size restricted to the range [12-256]
@@ -66,19 +67,18 @@ FAST-SG requires 4 mandatory arguments
 
   Short reads:
 	#type libID Path(fwd) Path(rev) SAM(1:single 2:paired)	
+
 	short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
 
   Long reads:	
 	#type libID Path(long read) Insert-sizes SAM(1:single 2:paired)	
+
 	long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
+
 	long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
 
-Example of read configuration file:
+Example of read configuration file can be foud in examples/ecoli-reads.txt
 
-short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
+## Running Fast-SG:
 
-long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
-
-long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
-
-
+	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
