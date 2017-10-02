@@ -57,28 +57,34 @@ FAST-SG.pl is the wrapper script used to run FastSG++.
 ## Mandatory options
 FAST-SG requires 4 mandatory arguments
 
-1.- The k-mer size restricted to the range [12-256]
+1.- The k-mer size (-k) restricted to the range [12-256]
 
-2.- The set of contig sequences in FASTA format.
+2.- The set of contig sequences (-r) in FASTA format.
 
-3.- The output prefix
+3.- The output prefix (-p)
 
-4.- The read configuration file having the following format:
+4.- The read configuration file (-r) having the following format:
 
   Short reads:
+
 	#type libID Path(fwd) Path(rev) SAM(1:single 2:paired)	
 
 	short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
 
   Long reads:	
+
 	#type libID Path(long read) Insert-sizes SAM(1:single 2:paired)	
 
 	long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
 
 	long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
 
-Example of read configuration file can be foud in examples/ecoli-reads.txt
+Example of a read configuration file can be foud in examples/ecoli-reads.txt
 
 ## Running Fast-SG:
 
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
+	
+	To obtain help and advanced options execute:
+
+	./FAST-SG.pl  --help
