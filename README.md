@@ -14,7 +14,7 @@ Obtain pre-compiled binaries from:
 
 	wget  https://github.com/refresh-bio/KMC/releases/download/v3.0.0/KMC3.mac.tar.gz 
 
-or compile yourself following the instruction provided in:
+or compile yourself following the instructions provided in:
 
 	https://github.com/refresh-bio/KMC
 
@@ -23,7 +23,7 @@ Obtain pre-compiled binaries from:
 
 	wget https://github.com/refresh-bio/KMC/releases/download/v3.0.0/KMC3.linux.tar.gz
 
-or compile yourself following the instruction provided in:
+or compile yourself following the instructions provided in:
 
 	https://github.com/refresh-bio/KMC
 
@@ -42,7 +42,7 @@ c++ compiler; compilation was tested with g++ version 5.3 (Linux) and clang vers
 	make test
 	
 ## Libraries used
-Currently Fast-SG use the following C++ opensource libraries:
+Currently Fast-SG uses the following C++ opensource libraries:
  
 1.- kseqcpp (https://github.com/ctSkennerton/kseqcpp.git checkout cfa50bcd17bbcb3225d431df4a2c1396f58a0993)
 
@@ -54,8 +54,8 @@ Currently Fast-SG use the following C++ opensource libraries:
 
 # Usage instructions
 FAST-SG.pl is the wrapper script used to run FastSG++.
-## Mandatory options
-FAST-SG requires 4 mandatory arguments
+## Mandatory agguments
+FAST-SG requires 4 mandatory arguments:
 
 1.- The k-mer size (-k) restricted to the range [12-256]
 
