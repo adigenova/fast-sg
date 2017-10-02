@@ -82,9 +82,13 @@ FAST-SG requires 4 mandatory arguments:
 Example of a read configuration file can be found in examples/ecoli-reads.txt
 
 ## Running Fast-SG (example):
-
-	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 	
+### Using a single K-mer
+	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
+### Using a range of k-mers
+
+	./FAST-SG.pl  -k 15-40:5 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
+### Help and advanced options	
 	To obtain help and advanced options details execute:
 
 	./FAST-SG.pl  --help
