@@ -63,16 +63,22 @@ FAST-SG requires 4 mandatory arguments
 3.- The output prefix
 
 4.- The read configuration file having the following format:
+
   Short reads:
 	#type libID Path(fwd) Path(rev) SAM(1:single 2:paired)	
 	short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
+
   Long reads:	
 	#type libID Path(long read) Insert-sizes SAM(1:single 2:paired)	
 	long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
 	long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
+
 Example of read configuration file:
+
 short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
+
 long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
+
 long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
 
 
