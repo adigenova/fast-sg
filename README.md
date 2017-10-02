@@ -86,7 +86,7 @@ Example of a read configuration file can be found in examples/ecoli-reads.txt
 ### Using a single k-mer
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 ### Using a range of k-mers
-	./FAST-SG.pl  -k 15-40:5 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
+	./FAST-SG.pl  -k 15-25:5 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 ### Help and additional options	
 	./FAST-SG.pl  --help
 
