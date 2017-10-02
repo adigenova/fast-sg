@@ -27,7 +27,7 @@ or compile yourself following the instructions provided in:
 
 	https://github.com/refresh-bio/KMC
 
-After download or compile KMC3, put the binaries inside Fast-SG directory, specifically in:
+After getting KMC3, put the binaries inside Fast-SG directory, specifically in:
 
 $Fast-SG/KMC/bin/kmc
 
@@ -63,7 +63,7 @@ FAST-SG requires 4 mandatory arguments:
 
 3.- The output prefix (-p)
 
-4.- The read configuration file (-r) having the following format:
+4.- The read configuration file (-r) having the following format (space separated):
 
   Short reads:
 
@@ -79,7 +79,7 @@ FAST-SG requires 4 mandatory arguments:
 
 	long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
 
-Example of a read configuration file can be foud in examples/ecoli-reads.txt
+Example of a read configuration file can be found in examples/ecoli-reads.txt
 
 ## Running Fast-SG (example):
 
