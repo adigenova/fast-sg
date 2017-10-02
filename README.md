@@ -89,7 +89,7 @@ Example of a read configuration file can be found in examples/ecoli-reads.txt
 
 	./FAST-SG.pl  -k 15-40:5 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 ### Help and advanced options	
-	To obtain help and advanced options details execute:
+	To obtain help and advance option details execute:
 
 	./FAST-SG.pl  --help
 	
