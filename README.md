@@ -87,6 +87,8 @@ Example of a read configuration file can be found in examples/ecoli-reads.txt
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 ### Using a range of k-mers
 	./FAST-SG.pl  -k 15-40:5 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
-### Help and advanced options	
+### Help and additional options	
 	./FAST-SG.pl  --help
-	
+
+# Licence
+Fast-SG software distributed under MIT licence
