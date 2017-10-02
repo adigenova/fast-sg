@@ -54,7 +54,7 @@ Currently Fast-SG uses the following C++ opensource libraries:
 
 # Usage instructions
 FAST-SG.pl is the wrapper script used to run FastSG++.
-## Mandatory agguments
+## Mandatory arguments
 FAST-SG requires 4 mandatory arguments:
 
 1.- The k-mer size (-k) restricted to the range [12-256]
