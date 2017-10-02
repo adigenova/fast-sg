@@ -21,7 +21,7 @@ FastSG++: FastSG.cpp modules
 %.o: %.cpp %.h
 	$(CXX) -o $@ -c $< $(CFLAGS)
 clean:
-	-rm -f  FastSG++ modules *.sam
+	-rm -f  FastSG++  *.sam
 #run small Fast-SG test and compare the resuting samfiles 
 test: $(EXEC)
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
