@@ -39,5 +39,11 @@ $FAST-SG/KMC/bin/kmc_dump
 	make test
 
 # Libraries required
-FAST-SG  use 
+Currently FAST-SG use the following C++ opensource libraries:
+ 
+1.- kseqcpp (git checkout cfa50bcd17bbcb3225d431df4a2c1396f58a0993)
+2.- ntHash (git checkout ff326a8c9ccf6186f42c1f49950c1ebaadbd7f7a)
+3.- BBHash (git checkout 99c905828a58fa119979df5c26bdbea93f0a7696)
+4,- quasi_dictionary (git checkout 9e8c64b150b129035f92d010a12085bd6c9490f0)
+
 
