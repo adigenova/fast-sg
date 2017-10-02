@@ -1,9 +1,9 @@
-# FAST-SG
-FAST-SG is an alignment-free algorithm for ultrafast scaffolding graph construction from short or long reads.
+# Fast-SG
+Fast-SG is an alignment-free algorithm for ultrafast scaffolding graph construction from short or long reads.
 
 # Compilation Instructions
 
-## Get FAST-SG code
+## Get Fast-SG code
 
 	git clone https://github.com/adigenova/fastsg
 
@@ -27,20 +27,22 @@ or compile yourself following the instruction provided in:
 
 	https://github.com/refresh-bio/KMC
 
-After download or compile KMC3, put the binaries inside FAST-SG directory, specifically in :
+After download or compile KMC3, put the binaries inside Fast-SG directory, specifically in:
 
-$FAST-SG/KMC/bin/kmc
+$Fast-SG/KMC/bin/kmc
 
-$FAST-SG/KMC/bin/kmc_dump
+$Fast-SG/KMC/bin/kmc_dump
 
-## Compile FAST-SG
+## Compile Fast-SG
 	make all
 
-## Test FAST-SG (small test)
+c++ compiler; compilation was tested with g++ version 5.3 (Linux) and clang version 4.2 (Mac OSX).
+
+## Test Fast-SG (small test)
 	make test
-	
-# Libraries used
-Currently FAST-SG use the following C++ opensource libraries:
+## 	
+## Libraries used
+Currently Fast-SG use the following C++ opensource libraries:
  
 1.- kseqcpp (https://github.com/ctSkennerton/kseqcpp.git checkout cfa50bcd17bbcb3225d431df4a2c1396f58a0993)
 
@@ -50,5 +52,27 @@ Currently FAST-SG use the following C++ opensource libraries:
 
 4,- quasi_dictionary (https://github.com/pierrepeterlongo/quasi_dictionary.git checkout 9e8c64b150b129035f92d010a12085bd6c9490f0)
 
+# Usage instructions
+FAST-SG.pl is the wrapper script used to run FastSG++.
+FAST-SG requires 4 mandatory arguments
+
+1.- The k-mer size restricted to the range [12-256]
+
+2.- The set of contig sequences in FASTA format.
+
+3.- The output prefix
+
+4.- The read configuration file having the following format:
+  Short reads:
+	#type libID Path(fwd) Path(rev) SAM(1:single 2:paired)	
+	short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
+  Long reads:	
+	#type libID Path(long read) Insert-sizes SAM(1:single 2:paired)	
+	long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
+	long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
+Example of read configuration file:
+short lib1 example/ecoli.ill-sim.fwd.fq.gz example/ecoli.ill-sim.rev.fq.gz 1
+long pac example/ECOLI-PACSEQ.subset.fasta.gz 1000,2000,3000,5000 1
+long ont example/ECOLI-ONT-1D.subset.fasta.gz 1000,2000,3000,5000 1
 
 
