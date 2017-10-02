@@ -1,7 +1,7 @@
 # FAST-SG
 FAST-SG is an alignment-free algorithm for ultrafast scaffolding graph construction from short or long reads.
 
-#Compilation Instructions
+# Compilation Instructions
 
 ## Get FAST-SG code
 
@@ -35,10 +35,11 @@ $FAST-SG/KMC/bin/kmc_dump
 
 ## Compile FAST-SG
 	make all
+
 ## Test FAST-SG (small test)
 	make test
-
-# Libraries required
+	
+# Libraries used
 Currently FAST-SG use the following C++ opensource libraries:
  
 1.- kseqcpp (https://github.com/ctSkennerton/kseqcpp.git checkout cfa50bcd17bbcb3225d431df4a2c1396f58a0993)
