@@ -22,7 +22,7 @@ FastSG++: FastSG.cpp modules
 	$(CXX) -o $@ -c $< $(CFLAGS)
 clean:
 	-rm -f  FastSG++  *.sam test.kmc.K15.txt test.fast-sg.K15.done
-#run small Fast-SG test and compare the resuting samfiles 
+#run Fast-SG several samfiles will be created 
 test: $(EXEC)
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 
