@@ -1,7 +1,7 @@
 # Fast-SG
 Fast-SG is an alignment-free algorithm for ultrafast scaffolding graph construction from short or long reads.
 
-#Table of contents
+# Table of contents
    * [Compilation Instructions](#compilation-instructions)
       * [Get Fast-SG code](#get-fast-sg-code)
       * [Get KMC (k-mer counter)](#get-kmc-k-mer-counter)
