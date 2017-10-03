@@ -7,7 +7,7 @@ Fast-SG is an alignment-free algorithm for ultrafast scaffolding graph construct
 
 	git clone https://github.com/adigenova/fastsg
 
-## Get KMC (kmer couter)
+## Get KMC (k-mer counter)
 
 ### Mac users
 Obtain pre-compiled binaries from:
