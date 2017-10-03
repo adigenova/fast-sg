@@ -25,7 +25,6 @@ clean:
 #run small Fast-SG test and compare the resuting samfiles 
 test: $(EXEC)
 	./FAST-SG.pl  -k 15 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
-	ls *.sam | xargs -n 1 sh  misc/compare-results.sh
 
 modules :
 	git clone https://github.com/ctSkennerton/kseqcpp.git && cd kseqcpp  && git checkout cfa50bcd17bbcb3225d431df4a2c1396f58a0993
