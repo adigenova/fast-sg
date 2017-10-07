@@ -1642,6 +1642,10 @@ private:
 
         //we read number_pairs reads
         while ((number_seq < number_pairs) && ((l = ks1.read(fwd)) >= 0) ) {
+		//we continue reading if seq is shorter kmer_size
+		if(fwd.seq.length() < kmer_size){
+                	continue;
+            	}
             //we store the long read in memory
             localseq.push_back(to_string(number_seq) + " " + fwd.seq + " " + fwd.name );
             number_seq++;
@@ -2222,6 +2226,10 @@ void * threaded_longmap (void* args)
         pthread_mutex_lock(mutex);
         //we read 1mb reads from  fwd and rev fastq/fasta file keep reads names and assing an unique id
         while ((number_seq < 1000) && ((l = ks1->read(fwd)) >= 0) ) {
+		//we continue reading if seq is shorter kmer_size
+		if(fwd.seq.length() < kmer_size){
+                	continue;
+            	}
             //we store the long read in memory
             localseq.push_back(to_string(number_seq) + " " + fwd.seq + " " + fwd.name );
             number_seq++;
