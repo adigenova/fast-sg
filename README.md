@@ -16,6 +16,7 @@ Fast-SG is an alignment-free algorithm for ultrafast scaffolding graph construct
          * [Using a single k-mer](#using-a-single-k-mer)
          * [Using a range of k-mers](#using-a-range-of-k-mers)
          * [Help and additional options](#help-and-additional-options)
+      * [Hybrid assembly of NA12878](#hybrid-assembly-of-na12878)
    * [Licence](#licence)
 
 # Compilation Instructions
@@ -106,6 +107,9 @@ Example of a read configuration file can be found in examples/ecoli-reads.txt
 	./FAST-SG.pl  -k 15-25:5 -l example/ecoli-reads.txt -r example/ecoli-illumina.fa.gz -p test
 ### Help and additional options	
 	./FAST-SG.pl  --help
+
+## Hybrid assembly of NA12878
+The [wiki page](https://github.com/adigenova/fast-sg/wiki/Hybrid-scaffolding-of-NA12878) provide a full example of the use of Fast-SG for the hybrid assembly of NA12878.
 
 # Licence
 Fast-SG software distributed under MIT licence
