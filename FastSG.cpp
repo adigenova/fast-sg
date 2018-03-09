@@ -1816,12 +1816,12 @@ public:
             cout << seqfile <<" "<<" has file extension of gzip files(*.gz or *.gzip)\n";
             compresed=1;//not compressed
         }else{
-            if((seqfile.find(".fq")!=string::npos ) || (seqfile.find(".fastq")!=string::npos)){
-                cout << seqfile <<" "<<" are text based *.fq or *.fastq\n";
+            if((seqfile.find(".fq")!=string::npos ) || (seqfile.find(".fastq")!=string::npos) || (seqfile.find(".fasta")!=string::npos) || (seqfile.find(".fa")!=string::npos)){
+                cout << seqfile <<" "<<" is text based FASTQ[*.fq,*.fastq] or FASTA[*.fa,*.fasta]\n";
                 compresed=2;//gzip compressed
             }else{
-                cout << seqfile <<" "<<" has not the file extension .gz or .fq or *.fastq\n";
-                cout << "not supported fastq file\n";
+                cout << seqfile <<" "<<" has not the file extension .gz or .fq or *.fastq or *.fasta or *.fa\n";
+                cout << "not supported file\n";
                 exit(1);
             }
         }
