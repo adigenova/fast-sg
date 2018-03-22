@@ -1,5 +1,7 @@
 
-![Logo](https://github.com/adigenova/fast-sg/blob/master/misc/img/fast-sg-logo.png)
+
+<p align="center"><img src="misc/img/fast-sg-logo.png"
+alt="Fast-SG" width="264" height="264" border="0" /></p>
 
 # Fast-SG
 Fast-SG is an alignment-free algorithm for ultrafast scaffolding graph construction from short or long reads.
