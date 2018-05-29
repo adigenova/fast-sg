@@ -23,6 +23,7 @@ Fast-SG is an alignment-free algorithm for ultrafast scaffolding graph construct
          * [Help and additional options](#help-and-additional-options)
       * [Hybrid assembly of NA12878](#hybrid-assembly-of-na12878)
    * [Licence](#licence)
+   * [Citation](#citation)
 
 # Compilation Instructions
 
@@ -118,3 +119,7 @@ The [wiki page](https://github.com/adigenova/fast-sg/wiki/Hybrid-scaffolding-of-
 
 # Licence
 Fast-SG software distributed under MIT licence
+# Citation
+
+Alex Di Genova, Gonzalo A Ruz, Marie-France Sagot, Alejandro Maass; Fast-SG: an alignment-free algorithm for hybrid assembly, GigaScience, Volume 7, Issue 5, 1 May 2018, giy048, [link](https://doi.org/10.1093/gigascience/giy048)
+
